@@ -1,0 +1,140 @@
+body {
+    font-family: monospace;
+    background-color: darkslateblue;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(201, 201, 201);
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background: linear-gradient(140deg,#2c3e50 9%, #bdc3c7 91%);
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    color: #c2c2c2;
+}
+
+.movie-card p {
+    margin: 5px 0;
+    color: #eaeaea;
+}
+
+.remove-btn {
+    background-color: #740000e0;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #631717e0;
+}
+
+#openModal {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(11, 10, 82);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#openModal:hover {
+    background-color: rgb(52, 52, 87);
+}
+
+dialog {
+    border: 2px solid #18416d;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 5px;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: rgb(37, 138, 37);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(5, 131, 5);
+}
+
+#closeModal {
+    background-color: #0d56a3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#closeModal:hover {
+    background-color: #00101f;
+}
+
+.toggle-watched-btn {
+    background-color: #362e77;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.toggle-watched-btn:hover {
+    background-color: #0e0269;
+}
+
+.watched-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bolder;
+}
+
+.watched-status.yes {
+    background-color: darkgreen;
+}
+
+.watched-status.no {
+    background-color: darkred;
+}

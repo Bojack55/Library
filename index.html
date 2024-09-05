@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Series Library</h1>
+    <div class="library" id="library"></div>
+    <button id="openModal">New Series</button>
+
+    <dialog id="movieModal">
+        <form id="movieForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="rate">Rating:</label>
+            <input type="number" id="rate" name="rate" min="0" max="10" step="0.1" required><br><br>
+
+            <label for="prodyear">Production Year:</label>
+            <input type="number" id="prodyear" name="prodyear" max="2024" required><br><br>
+
+            <label for="seasons">Seasons:</label>
+            <input type="number" id="seasons" name="seasons" required><br><br>
+
+            <label for="watched">Watched?</label>
+            <input type="checkbox" id="watched" name="watched"><br><br>
+
+            <button type="submit">Add Series</button>
+            <button type="button" id="closeModal">Close</button>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
